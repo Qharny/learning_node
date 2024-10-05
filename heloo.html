@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d9d9d9;
+        }
+        .box{
+            height: 400px;
+            width: 500px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onclick="changeColor(this)">
+        <p>Tap here to change color</p>
+    </div>
+
+    <script type="text/javascript">
+        function changeColor(element){
+            const myColor = element.style.background;
+            if (myColor == "white"){
+                element.style.background = "red";
+            }else if(myColor == "green"){
+                element.style.background = "blue";
+            } 
+            else {
+                element.style.background = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -16,7 +16,7 @@
         .box{
             height: 400px;
             width: 500px;
-            background: #fff;
+            background: red;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -33,13 +33,11 @@
     <script type="text/javascript">
         function changeColor(element){
             const myColor = element.style.background;
-            if (myColor == "white"){
-                element.style.background = "red";
-            }else if(myColor == "green"){
+            if (myColor == "red"){
                 element.style.background = "blue";
-            } 
+            }
             else {
-                element.style.background = "yellow";
+                element.style.background = "red";
             }
         }
     </script>
